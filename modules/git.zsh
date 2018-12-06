@@ -9,7 +9,7 @@ alien_git_branch_name() {
 }
 
 alien_git_branch() {
-  echo -n " ${ALIEN_GIT_SYM}: ${ALIEN_BRANCH_SYM} $(alien_git_branch_name) ";
+  echo -n " ${ALIEN_BRANCH_SYM} $(alien_git_branch_name) ";
   return true;
 }
 
@@ -19,4 +19,13 @@ alien_git_lr(){
 
 alien_git_dirty(){
   echo -n "`plib_git_dirty`";
+}
+
+alien_is_git_dirty(){
+  if [[ $(plib_git_dirty) != "" ]]; then
+    echo -ne 1
+  else
+    echo -ne 0
+  fi
+
 }
