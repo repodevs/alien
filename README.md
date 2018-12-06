@@ -31,6 +31,9 @@ export PLIB_GIT_TRACKED_COLOR=black
 source ~/alien/alien-custom.zsh
 ```
 
+![repodevs](https://raw.githubusercontent.com/repodevs/alien/master/screenshots/repodevs.png)
+
+
 ## Libraries Used
 
 - ['256color'](https://github.com/chrissicool/zsh-256color) by **[@chrissicool](https://github.com/chrissicool)**
